@@ -1,7 +1,8 @@
 // λfx.x
 export const Zero = f => x => x;
-// λfx.fx
-export const One  = f => x => f(x);
 
-// Add := λyz.λfx.yf(zfx)
-export const Add  =  y => z => f => x => y(f)(z(f)(x));
+export const Succ = n => f => z => f(n(f)(z));
+export const Pred = z => f => x => z(g => h => h(g(f)))(u => x)(u => u);
+
+export const Sub  = a => b => b(Pred)(a);
+export const Add  = a => b => a(Succ)(b);
