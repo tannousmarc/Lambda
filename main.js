@@ -1,3 +1,2 @@
 import { I, K, S, w } from './combinators.js';
-
-console.log(I(3));
+import { True, False, And, Or, If } from './conditionalBranching.js';
