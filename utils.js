@@ -1,0 +1,1 @@
+export const displayNumber = x => x (n => n + 1) (0);
