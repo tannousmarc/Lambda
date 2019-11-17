@@ -4,4 +4,4 @@ export const Zero = f => x => x;
 export const One  = f => x => f(x);
 
 // Add := λyz.λfx.yf(zfx)
-export const Add  =  y => z => f => x => y(f) (z(f)(x));
+export const Add  =  y => z => f => x => y(f)(z(f)(x));
