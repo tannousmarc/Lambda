@@ -43,7 +43,6 @@ assert(displayNumber(Add(Zero)(Zero)) === 0, "displayNumber(Add(Zero)(Zero)) eva
 assert(displayNumber(Add(Zero)(Succ(Zero))) === 1, "displayNumber(Add(Zero)(Succ(Zero))) evaluates to 1");
 assert(displayNumber(Add(Succ(Zero))(Zero)) === 1, "displayNumber(Add(Succ(Zero))(Zero)) evaluates to 1");
 
-
 assert(displayNumber(Sub(Zero)(Zero)) === 0, "displayNumber(Sub(Zero)(Zero)) evaluates to 0");
 assert(displayNumber(Sub(Zero)(Succ(Zero))) === 0, "displayNumber(Sub(Zero)(Succ(Zero))) evaluates to 0");
 assert(displayNumber(Sub(Succ(Zero))(Zero)) === 1, "displayNumber(Sub(Succ(Zero))(Zero)) evaluates to 1");
