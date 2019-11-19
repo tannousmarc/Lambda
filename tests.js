@@ -46,3 +46,9 @@ assert(displayNumber(Add(Succ(Zero))(Zero)) === 1, "displayNumber(Add(Succ(Zero)
 assert(displayNumber(Sub(Zero)(Zero)) === 0, "displayNumber(Sub(Zero)(Zero)) evaluates to 0");
 assert(displayNumber(Sub(Zero)(Succ(Zero))) === 0, "displayNumber(Sub(Zero)(Succ(Zero))) evaluates to 0");
 assert(displayNumber(Sub(Succ(Zero))(Zero)) === 1, "displayNumber(Sub(Succ(Zero))(Zero)) evaluates to 1");
+
+assert(isZero(Zero) === True, "isZero(Zero) evaluates to True");
+assert(isZero(Succ(Zero)) === False, "isZero(Succ(Zero))) evaluates to False");
+
+assert(If(True)(True)(False) === True, "If(True)(True)(False) evaluates to True");
+assert(If(False)(True)(False) === False, "If(False)(True)(False) evaluates to False");
