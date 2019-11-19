@@ -52,3 +52,15 @@ assert(isZero(Succ(Zero)) === False, "isZero(Succ(Zero))) evaluates to False");
 
 assert(If(True)(True)(False) === True, "If(True)(True)(False) evaluates to True");
 assert(If(False)(True)(False) === False, "If(False)(True)(False) evaluates to False");
+
+assert(lessThanOrEqual(Zero)(Succ(Zero)) === True, "lessThanOrEqual(Zero)(Succ(Zero)) evaluates to True");
+assert(lessThanOrEqual(Zero)(Zero) === True, "lessThanOrEqual(Zero)(Zero) evaluates to True");
+assert(lessThanOrEqual(Succ(Zero))(Zero) === False, "lessThanOrEqual(Succ(Zero))(Zero) evaluates to False");
+
+assert(isEqual(Zero)(Succ(Zero)) === False, "isEqual(Zero)(Succ(Zero)) evaluates to False");
+assert(isEqual(Zero)(Zero) === True, "isEqual(Zero)(Zero) evaluates to True");
+assert(isEqual(Succ(Zero))(Zero) === False, "isEqual(Succ(Zero))(Zero) evaluates to False");
+
+assert(greaterThan(Zero)(Succ(Zero)) === False, "greaterThan(Zero)(Succ(Zero)) evaluates to False");
+assert(greaterThan(Zero)(Zero) === False, "greaterThan(Zero)(Zero) evaluates to False");
+assert(greaterThan(Succ(Zero))(Zero) === True, "greaterThan(Succ(Zero))(Zero) evaluates to True");
